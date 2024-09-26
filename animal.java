@@ -2,13 +2,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public interface Animal {
+interface Animal {
     void emitirSom();
     String getNome();
     int getIdade();
 }
 
-public abstract class AnimalBase implements Animal {
+abstract class AnimalBase implements Animal {
     private String nome;
     private int idade;
 
@@ -47,7 +47,7 @@ public abstract class AnimalBase implements Animal {
     }
 }
 
-public class Leão extends AnimalBase {
+class Leão extends AnimalBase {
     public Leão(String nome, int idade) {
         super(nome, idade);
     }
@@ -58,7 +58,7 @@ public class Leão extends AnimalBase {
     }
 }
 
-public class Elefante extends AnimalBase {
+class Elefante extends AnimalBase {
     public Elefante(String nome, int idade) {
         super(nome, idade);
     }
@@ -69,7 +69,7 @@ public class Elefante extends AnimalBase {
     }
 }
 
-public class Pássaro extends AnimalBase {
+class Pássaro extends AnimalBase {
     public Pássaro(String nome, int idade) {
         super(nome, idade);
     }
